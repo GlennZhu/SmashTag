@@ -164,6 +164,7 @@ class TweetDetailTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let identifier = segue.identifier {
+            println(identifier)
             switch(identifier) {
             case StoryBoard.hashtagSegue:
                 fallthrough
